@@ -1,25 +1,14 @@
-// const prompt = require('prompt');
-// prompt.start();
+const prompt = require('prompt');
+prompt.start();
 
 
-// prompt.get('input', function (err, result) {
+prompt.get('input', function (err, result) {
   
 
-//     const n = result.input
+    let n = result.input
 
-//     n = n.toString().split('')
-
-//     console.log(n);
-
-// });
-
-//100 - 100
-//20 - 30
-//1 - 2
-
-let n = 123
-
-function getTotalPrice(n){
+    
+    function getTotalPrice(n){
     n = n.toString().split('').reverse()
     let result = 0
 
@@ -34,7 +23,13 @@ function getTotalPrice(n){
     }
 
     return result
-}
+    }
 
+    console.log(getTotalPrice(n));
 
-console.log(getTotalPrice(n));
+});
+
+//100 - 100
+//20 - 30
+//1 - 2
+
